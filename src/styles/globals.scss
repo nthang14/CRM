@@ -1,0 +1,134 @@
+@import "./input";
+@import "./select";
+@import "./button";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --text-01: #2a2d29;
+  --color-error: #ff4d4f;
+  --color-success: #87d068;
+  --wallet-color: #d9d9d9;
+  --bg-primary: #f2f6f5;
+  --primary-09: #14240a;
+  --neutral-08: #333433;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--text-01);
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  font-size: 16px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8d8d8 !important;
+}
+::-webkit-scrollbar-track {
+  box-shadow: none !important;
+  border-radius: 10px !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d8d8d8 !important;
+  border-radius: 10px !important;
+}
+.MuiDialogContent-root {
+  overflow: hidden !important;
+  overflow-y: auto !important;
+}
+.flex-important {
+  display: flex !important;
+}
+
+.mb-0-i {
+  margin-bottom: 0 !important;
+}
+
+.box-form {
+  padding: 24px;
+  border-radius: 16px;
+  margin-top: 24px;
+  background-color: #ffffff;
+}
+
+.min-h-custom {
+  min-height: calc(100% - 72px);
+}
+
+.word-break-all {
+  word-break: break-all;
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.chip-in-out {
+  width: 65px;
+  height: 24px;
+  border-radius: 8px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.new-line {
+  white-space: pre-line;
+}
+
+.text-line-1 {
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+  text-overflow: ellipsis !important;
+}
+.text-line-2 {
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  text-overflow: ellipsis !important;
+}
+
+.bg-white-opacity-30 {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+.bg-select-active {
+  border-radius: 16px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}

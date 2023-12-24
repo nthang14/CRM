@@ -1,0 +1,25 @@
+{
+  "common": {
+    "navigation": "navigation",
+    "button": {
+      "continue": "continue",
+      "login": "login"
+    },
+    "messages": {
+      "msg001input": "Please enter {field}."
+    }
+  },
+  "nav": {
+    "dataAnalysis": "Dashboard",
+    "dashboard": "Dashboard"
+  },
+
+  "login": {
+    "title": "title",
+    "sub_title": "sub_title",
+    "payload": {
+      "username": "username",
+      "password": "password"
+    }
+  }
+}

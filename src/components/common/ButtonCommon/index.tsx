@@ -1,0 +1,19 @@
+import {Button} from "@mui/material";
+import '~/components/common/ButtonCommon/style.scss'
+
+const ButtonCommon = ({ children, ...props }: any) => {
+  return (
+    <Button
+      className={`${props.className}`}
+      variant={props.variant || "contained"}
+      color={props.color || "primary"}
+      size={props.size || "large"}
+      disabled={props.disabled}
+      onClick={props.onClick}
+    >
+      {children ?? props.title}
+    </Button>
+  );
+};
+
+export default ButtonCommon;
